@@ -1,16 +1,15 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>ros-dashing-console-bridge-vendor</id>
-    <version>1.2.0</version>
-    <title>ros-dashing-console-bridge-vendor</title>
-    <authors>Steven! Ragnarök</authors>
+    <id>@(Package)</id>
+    <version>@(Version)</version>
+    <title>@(Package)</title>
+    <authors>@(Authors)</authors>
     <owners>OSRF</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Wrapper around console_bridge, providing nothing but a dependency on console_bridge, on some systems.
- On others, it provides an ExternalProject build of console_bridge.</description>
+    <description>@(Description)</description>
     <dependencies>
-
+@[for d in Depends]@(d)@[end for]
     </dependencies>
   </metadata>
   <files>
